@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.country.CountryFragment">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rl_stats_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/stat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_stats"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="24dp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_refresh"
+            android:id="@+id/tvLastUpdated"
+            style="@style/LabelFontStyle"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            tools:text="Mon, 23 Mar 2020 1:20:30 PM" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:contentDescription="update"
+            android:id="@+id/btn_refresh"
+            android:src="@drawable/ic_refresh"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:id="@+id/rl_stats_main"
+        android:layout_below="@+id/rl_stats_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_stats_affected"
+
+                android:layout_alignParentLeft="true"
+                android:layout_width="205dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="16dp"
+                app:cardUseCompatPadding="false"
+                app:cardCornerRadius="8dp"
+                android:elevation="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="0dp"
+                app:cardBackgroundColor="@color/colorYellow"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Affected"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:textSize="14dp"
+                        android:lineHeight="15dp"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="88888888"
+                        android:id="@+id/tvTotalConfirmed"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="24dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentRight="true"
+            android:id="@+id/card_stats_deaths"
+            android:layout_width="205dp"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/colorRed"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:lineHeight="15dp"
+                    android:text="Death"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/tvTotalDeaths"
+                    android:text="88888888"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="42dp"
+        android:orientation="vertical"
+        android:id="@+id/rl_stats_secondary"
+        android:layout_below="@+id/rl_stats_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_stats_recovered"
+            android:layout_alignParentLeft="true"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="16dp"
+            app:cardUseCompatPadding="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="0dp"
+            app:cardBackgroundColor="@color/colorGreen"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recovered"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="14dp"
+                    android:lineHeight="15dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12000"
+                    android:id="@+id/tvTotalRecovered"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            android:id="@+id/card_stats_active"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:lineHeight="15dp"
+                    android:text="Active"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/tvTotalActive"
+                    android:text="17000"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentRight="true"
+            android:id="@+id/card_stats_serious"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/colorPurple"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:lineHeight="15dp"
+                    android:text="Critical"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/tvTotalCritical"
+                    android:text="17000"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_above="@+id/rvCovidCountry"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvTotalCountries"
+        style="@style/LabelFontStyle"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        tools:text="212 countries" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:layout_below="@+id/rl_stats_secondary"
+            android:id="@+id/rvCovidCountry"
+            android:paddingTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_list_covid_country"
+            android:background="@drawable/stat_rounded_top"
+            />
+
+    <ProgressBar
+        android:id="@+id/progress_circular_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress" />
+
+</RelativeLayout>

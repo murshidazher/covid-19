@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CovidTracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_country">Country</string>
+    <string name="title_stats">Statistics</string>
+    <string name="title_info">Information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Home texts -->
+
+    <string name="home_main_title">Covid-19</string>
+
+    <string name="home_lead_title">Are you feeling sick?</string>
+    <string name="home_lead_sub">If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</string>
+
+    <string name="txt_btn_call_now">Call Now</string>
+    <string name="txt_btn_send_sms">Send SMS</string>
+
+    <string name="prevention_header">Prevention</string>
+    <string name="prevention_img_text_one">Avoid close contact</string>
+    <string name="prevention_img_text_two">Clean your hands often</string>
+    <string name="prevention_img_text_three">Wear a facemask</string>
+
+    <string name="cv_title">Do your own test!</string>
+    <string name="cv_body">Follow the instructions to do your own test.</string>
+
+    <!-- Firebase Cloud Messaging -->
+    <string name="quickstart_message">Click the SUBSCRIBE TO COVID Notification button</string>
+    <string name="subscribe_to_covid">Subscribe To Covid-19</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to covid topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Covid</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to covid updates</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+
+</resources>

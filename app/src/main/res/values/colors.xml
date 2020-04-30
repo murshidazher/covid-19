@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#553EB5</color>
+    <color name="colorPrimaryDark">#553EB5</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTotalConfirmed">#FF4D58</color>
+    <color name="colorTotalDeaths">#999999</color>
+    <color name="colorTotalRecovered">#7bb974</color>
+
+    <color name="colorPinkLight">#FFE5EE</color>
+    <color name="colorNavUnselected">#999FBF</color>
+    <color name="colorNavSelectedChip">#4D79FF</color>
+
+    <color name="colorYellow">#FFB259</color>
+    <color name="colorRed">#FF4C58</color>
+    <color name="colorGreen">#4CD97B</color>
+    <color name="colorBlue">#4CB5FF</color>
+    <color name="colorPurple">#9059FF</color>
+
+</resources>

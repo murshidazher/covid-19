@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_selector"
+        android:title="@string/title_home"
+        app:cnb_backgroundColor="@color/colorNavSelectedChip"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+    <item
+        android:id="@+id/navigation_country"
+        android:icon="@drawable/stats_selector"
+        android:title="@string/title_stats"
+        app:cnb_backgroundColor="@color/colorNavSelectedChip"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/info_selector"
+        android:title="@string/title_info"
+        app:cnb_backgroundColor="@color/colorNavSelectedChip"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+
+
+
+</menu>

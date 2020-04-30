@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_above="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_intro"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_v_avoid_close_contact"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_title"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.25"
+        android:lineSpacingExtra="2dp"
+        android:text="Avoid Close Contacts"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/tv_desc"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="18dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.25"
+        android:lineSpacingExtra="2dp"
+        android:text="Avoid close contants and maintain a social distance of about 6ft. Specially, maintain a safe distance from anyone who is coughing or sneezing."
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>
