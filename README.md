@@ -21,9 +21,9 @@
 ## What's in the box
 
 <p float="left">
-<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/on-boarding.gif" width="362px">
-<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/statistics.gif" width="362px">
-<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/filtering.gif" width="362px">
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/on-boarding.gif" width="32%">
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/statistics.gif" width="32%">
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/filtering.gif" width="32%">
 </p>
 
 ### Highlights
