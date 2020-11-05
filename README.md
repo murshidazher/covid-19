@@ -21,6 +21,14 @@
 
 ## What's in the box
 
+<p float="left">
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/on-boarding.gif" height="420px">
+
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/statistics.gif" height="420px">
+
+<img src="https://raw.githubusercontent.com/murshidazher/covid-19/master/docs/filtering.gif" height="420px">
+</p>
+
 ### Highlights
 
 - **Basic Tools** [some feature]() - details
